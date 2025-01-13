@@ -135,8 +135,8 @@ def main():
         insights = process_data(raw_data)
         print(insights)
         # push transformed data to Kafka
-        # push_to_kafka(producer, OUTPUT_TOPIC, insights)
-        # print(f"Transformed data sent to Kafka topic '{OUTPUT_TOPIC}'.")
+        push_to_kafka(producer, OUTPUT_TOPIC, insights)
+        print(f"Transformed data sent to Kafka topic '{OUTPUT_TOPIC}'.")
 
 if __name__ == "__main__":
     main()
