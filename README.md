@@ -33,8 +33,8 @@
  
 ->Key things to consider for growing data set:
 --------------------
-1.Adjust Cluster config to process the growing data set.
-2.Implementing offset, current exercise doesn't provide with GroupId to do so. This would enable to process all the records
+1. Adjust Cluster config to process the growing data set.
+2. Implementing offset, current exercise doesn't provide with GroupId to do so. This would enable to process all the records
 from kafka producer without missing any or reprocessing the same.
 3. Adjust Intervals to fetch desired amount of size in batches.
 4. Choose right data format with compressions to optimize on storage.
